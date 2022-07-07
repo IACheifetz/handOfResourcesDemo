@@ -3,6 +3,7 @@
 DROP TABLE IF EXISTS jobs;
 DROP TABLE IF EXISTS swords;
 DROP TABLE IF EXISTS helmets;
+DROP TABLE IF EXISTS filaments;
 
 CREATE TABLE jobs (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -23,4 +24,12 @@ CREATE TABLE helmets (
     helmet_name TEXT NOT NULL,
     helmet_region TEXT NOT NULL,
     era TEXT NOT NULL
+);
+
+CREATE TABLE filaments (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    filament_name TEXT NOT NULL,
+    flexibility TEXT NOT NULL,
+    impact_resistance TEXT NOT NULL,
+    heat_tolerance TEXT NOT NULL
 );
