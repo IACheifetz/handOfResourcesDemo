@@ -64,7 +64,7 @@ describe('backend-express-template routes', () => {
       .put(`/api/v1/helmets/${helmet.id}`)
       .send({ 
         helmet_name: 'Barbute', 
-        helmet_region: 'France', 
+        helmet_region: 'Italy', 
         era: 'early renassaince', 
       });
     expect(response.status).toEqual(200);
