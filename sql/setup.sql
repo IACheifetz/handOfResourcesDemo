@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS jobs;
 DROP TABLE IF EXISTS swords;
 DROP TABLE IF EXISTS helmets;
 DROP TABLE IF EXISTS filaments;
+DROP TABLE IF EXISTS instruments;
 
 CREATE TABLE jobs (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -32,4 +33,11 @@ CREATE TABLE filaments (
     flexibility TEXT NOT NULL,
     impact_resistance TEXT NOT NULL,
     heat_tolerance TEXT NOT NULL
+);
+
+CREATE TABLE instruments (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    instrument_name TEXT NOT NULL,
+    accessibility TEXT NOT NULL,
+    average_price TEXT NOT NULL
 );
