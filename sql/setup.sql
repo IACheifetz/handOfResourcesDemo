@@ -7,4 +7,4 @@ CREATE TABLE jobs (
     job_name TEXT NOT NULL,
     min_level TEXT NOT NULL,
     job_type TEXT NOT NULL
-)
+);
